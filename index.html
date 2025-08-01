@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkedin</title>
+    <link rel="shortcut icon" href="fav.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html"><img src="fav.jpg" alt="logo" class="logo"></a>
+            <div class="search-box">
+             <img src="seach-icon.png" alt="" >
+            <input type="text" placeholder="search">
+        </div>
+
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="home.png" alt="icon" ><span>Home</span></a></li>
+                <li><a href="#"><img src="network.png" alt="icon" ><span>Network</span></a></li>
+                <li><a href="#"><img src="jops.png" alt="icon" ><span>Jops</span></a></li>
+                <li><a href="#"><img src="not.png" alt="icon" ><span>Notifications</span></a></li>
+            </ul>
+
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="user-profile.jpg" alt="user" class="nav-profile-img"  onclick="profilemenu()">
+                
+                
+            </div>
+
+        </div>
+        <div class="profile-menu-wrap" id="profiles" >
+        
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="user-profile.jpg" alt="" >
+                    
+                    <div>
+                        <h3>Mohaan Ismail Dahir</h3>
+                        <a href="profile.html">see your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="feedback.png" alt="">
+                    <p>give feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="settings.png" alt="">
+                    <p>settings and Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="feedback.png" alt="">
+                    <p>Help and support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="moon.png" alt="">
+                    <p>Display and Accsesibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="power-off.png" alt="">
+                    <p>logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="sidbar-profile-box">
+                <img src="cover-image.jpg" alt="cover" class="cover">
+                <div class="side-profile-info">
+                    <!-- <img src="plus.png" alt=""> -->
+                    <img src="user-profile.jpg" alt="user">
+                    <h1>KIng Mohaan Ismail</h1>
+                    <h3>Developer the Unity University</h3>
+                    <ul>
+                        <li>Your profile view <span>52</span></li>
+                        <li>Your Post view <span>810</span></li>
+                        <li>Your connections<span> 210</span></li>
+                    </ul>
+            </div>
+            </div>
+            
+         <div class="sidebar-profile-links">
+            <a href="#"><img src="bookmark.png" class="book"><div id="items">My Items</div></a>
+            <a href="#"><img src="primuim.png" alt="book">My Premium</a>
+         </div>
+         <div class="sidebar-activity" id="sidebatactivity">
+            <h3>Recent</h3>
+            <a href=""><img src="recent.png">Webdevelopment</a>
+            <a href=""><img src="recent.png">User Interface</a>
+            <a href=""><img src="recent.png">Online Learning</a>
+            <a href=""><img src="recent.png">Code bettery</a>
+            <a href=""><img src="recent.png">Group Learning</a>
+            <h3>Groups</h3>
+            <a href=""><img src="groups.png">Web Design</a>
+            <a href=""><img src="groups.png">Htm css Learning</a>
+            <a href=""><img src="groups.png">python and javascript Groups</a>
+            <a href=""><img src="groups.png">Somaali Developers</a>
+            <h3>Hashtag</h3>
+            <a href=""><img src="hashtag.png">Webdevelopment</a>
+            <a href=""><img src="hashtag.png">Interface</a>
+            <a href=""><img src="hashtag.png">Somaali Developers</a>
+            <div class="discover-more-lonks">
+                <a href="#">discover more</a>
+            </div>
+
+         </div>
+         <p id="show-more-link" onclick="showMore()">Show more...<b>+</b></p>
+        </div>
+        <div class="main-content">
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="user-profile.jpg">
+                    <textarea rows="2" placeholder="write a post"></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="camera.png" >Photo</li>
+                    <li><img src="video.png" >Photo</li>
+                    <li><img src="calendar.png" >Event</li>
+                    <li>post now</li>
+                </div>
+            </div>
+            <div class="sort-py">
+                <hr>
+                <p> sort by: <span>stop <img src="down.png"></span></p>
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="user-profile-2.jpg">
+                    <div>
+                        <h1>Abdisalaan Ismail Dahir</h1>
+                        <small>Founder and ceo hass group | Angela investor</small>
+                        <small>1 hour ago</small>
+                    </div>
+                </div>
+                <p>The success every website depends on search engine optimision and digital.</p>
+                <img src="post-1.jpg"  width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="like.png">
+                        <img src="thumbs-up.png">
+                        <img src="laughing.png">
+                        <span class="liked-users">xabsa queen and 15 others </span>
+                    </div>
+                    <div>
+                        <span>100 commnets &mDDot; 20 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="user-profile-2.jpg" alt="" class="proile1">
+                        <img src="down.png" alt="" class="arrow">
+                    </div>
+                     <div>
+                        <img src="like1.png" alt="" class="post-activity-like">
+                        <span>like</span>
+                    </div>
+                     <div>
+                        <img src="chat.png" alt="" class="post-activity-like">
+                        <span>commnets</span>
+                    </div>
+                    <div>
+                        <img src="share.png" alt="" class="post-activity-like">
+                        <span>share</span>
+                    </div>
+                    <div>
+                        <img src="send.png" alt="" class="post-activity-like">
+                        <span>send</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="doctor-profile.jpg">
+                    <div>
+                        <h1>salma daahir maxamed</h1>
+                        <small>nurse health center| health</small>
+                        <small>4 hour ago</small>
+                    </div>
+                </div>
+                <p>caafimaadku waa u mihiim nolosha</p>
+                <img src="doctor-post.jpg"  width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="like.png">
+                        <img src="thumbs-up.png">
+                        <img src="laughing.png">
+                        <span class="liked-users">dr xaliimo xaaji  and 35 others </span>
+                    </div>
+                    <div>
+                        <span>12k commnets &middot; 44 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="doctor-profile.jpg" alt="" class="proile1">
+                        <img src="down.png" alt="" class="arrow">
+                    </div>
+                     <div>
+                        <img src="like1.png" alt="" class="post-activity-like">
+                        <span>like</span>
+                    </div>
+                     <div>
+                        <img src="chat.png" alt="" class="post-activity-like">
+                        <span>commnets</span>
+                    </div>
+                    <div>
+                        <img src="share.png" alt="" class="post-activity-like">
+                        <span>share</span>
+                    </div>
+                    <div>
+                        <img src="send.png" alt="" class="post-activity-like">
+                        <span>send</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="has1.jpg">
+                    <div>
+                        <h1>Hass Digital Service</h1>
+                        <small>created all digital | our service</small>
+                        <small>22mm ago</small>
+                    </div>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur porro aut eligendi molestiae dolore, sed quis obcaecati iste, tempora corrupti maiores ab id harum aperiam. Ea deleniti consequuntur quibusdam quam voluptates minus ut? Ducimus vitae nesciunt totam, ut debitis eveniet.</p>
+                <img src="hass-post.jpeg"  width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="like.png">
+                        <img src="thumbs-up.png">
+                        <img src="laughing.png">
+                        <span class="liked-users">dj naasir and 10k others </span>
+                    </div>
+                    <div>
+                        <span>20k commnets &middot; 120 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="has1.jpg" alt="" class="proile1">
+                        <img src="down.png" alt="" class="arrow">
+                    </div>
+                     <div>
+                        <img src="like1.png" alt="" class="post-activity-like">
+                        <span>like</span>
+                    </div>
+                     <div>
+                        <img src="chat.png" alt="" class="post-activity-like">
+                        <span>commnets</span>
+                    </div>
+                    <div>
+                        <img src="share.png" alt="" class="post-activity-like">
+                        <span>share</span>
+                    </div>
+                    <div>
+                        <img src="send.png" alt="" class="post-activity-like">
+                        <span>send</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="man1.jpg">
+                    <div>
+                        <h1>maxamed sadaam cali</h1>
+                        <small>manager and ceo  | goodir tech</small>
+                        <small>3 hour ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, pariatur.</p>
+                <img src="man-post.jpeg"  width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="like.png">
+                        <img src="thumbs-up.png">
+                        <img src="laughing.png">
+                        <span class="liked-users">khadar cali and 15 others </span>
+                    </div>
+                    <div>
+                        <span>300 commnets &mDDot; 45 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="man1.jpg" alt="" class="proile1">
+                        <img src="down.png" alt="" class="arrow">
+                    </div>
+                     <div>
+                        <img src="like1.png" alt="" class="post-activity-like">
+                        <span>like</span>
+                    </div>
+                     <div>
+                        <img src="chat.png" alt="" class="post-activity-like">
+                        <span>commnets</span>
+                    </div>
+                    <div>
+                        <img src="share.png" alt="" class="post-activity-like">
+                        <span>share</span>
+                    </div>
+                    <div>
+                        <img src="send.png" alt="" class="post-activity-like">
+                        <span>send</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="muniir-profile.jpg">
+                    <div>
+                        <h1>muniir cali adan</h1>
+                        <small>journalist and news | mmt somali tv</small>
+                        <small>6 hour ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nam repellat modi aliquid dolor. Quae quas repudiandae, fuga error vitae possimus dolore.</p>
+                <img src="muniir-post.jpg"  width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="like.png">
+                        <img src="thumbs-up.png">
+                        <img src="laughing.png">
+                        <span class="liked-users">xasan idaaja and 44 others </span>
+                    </div>
+                    <div>
+                        <span>88 commnets &mDDot; 12 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="muniir-profile.jpg" alt="" class="proile1">
+                        <img src="down.png" alt="" class="arrow">
+                    </div>
+                     <div>
+                        <img src="like1.png" alt="" class="post-activity-like">
+                        <span>like</span>
+                    </div>
+                     <div>
+                        <img src="chat.png" alt="" class="post-activity-like">
+                        <span>commnets</span>
+                    </div>
+                    <div>
+                        <img src="share.png" alt="" class="post-activity-like">
+                        <span>share</span>
+                    </div>
+                    <div>
+                        <img src="send.png" alt="" class="post-activity-like">
+                        <span>send</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="profile-studio.jpg">
+                    <div>
+                        <h1>dj faaco media</h1>
+                        <small>studio faaci.com | faaco media</small>
+                        <small>3 hour ago</small>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum molestiae ducimus ut iusto doloribus eius voluptatum laboriosam quia beatae modi amet ab omnis expedita laudantium quo placeat quibusdam, dignissimos labore commodi tempora numquam.</p>
+                <img src="studio-post.jpg"  width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="like.png">
+                        <img src="thumbs-up.png">
+                        <img src="laughing.png">
+                        <span class="liked-users">sumaya khadar and 33 others </span>
+                    </div>
+                    <div>
+                        <span>12k commnets &mDDot; 2k shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="profile-studio.jpg" alt="" class="proile1">
+                        <img src="down.png" alt="" class="arrow">
+                    </div>
+                     <div>
+                        <img src="like1.png" alt="" class="post-activity-like">
+                        <span>like</span>
+                    </div>
+                     <div>
+                        <img src="chat.png" alt="" class="post-activity-like">
+                        <span>commnets</span>
+                    </div>
+                    <div>
+                        <img src="share.png" alt="" class="post-activity-like">
+                        <span>share</span>
+                    </div>
+                    <div>
+                        <img src="send.png" alt="" class="post-activity-like">
+                        <span>send</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="post">
+                <div class="post-author">
+                    <img src="user-profile-2.jpg">
+                    <div>
+                        <h1>Abdisalaan Ismail Dahir</h1>
+                        <small>Founder and ceo hass group | Angela investor</small>
+                        <small>1 hour ago</small>
+                    </div>
+                </div>
+                <p>The success every website depends on search engine optimision and digital.</p>
+                <img src="post-1.jpg"  width="100%">
+                <div class="post-stats">
+                    <div>
+                        <img src="like.png">
+                        <img src="thumbs-up.png">
+                        <img src="laughing.png">
+                        <span class="liked-users">xabsa queen and 15 others </span>
+                    </div>
+                    <div>
+                        <span>100 commnets &mDDot; 20 shares</span>
+                    </div>
+                </div>
+                <div class="post-activity">
+                    <div>
+                        <img src="user-profile-2.jpg" alt="" class="proile1">
+                        <img src="down.png" alt="" class="arrow">
+                    </div>
+                     <div>
+                        <img src="like1.png" alt="" class="post-activity-like">
+                        <span>like</span>
+                    </div>
+                     <div>
+                        <img src="chat.png" alt="" class="post-activity-like">
+                        <span>commnets</span>
+                    </div>
+                    <div>
+                        <img src="share.png" alt="" class="post-activity-like">
+                        <span>share</span>
+                    </div>
+                    <div>
+                        <img src="send.png" alt="" class="post-activity-like">
+                        <span>send</span>
+                    </div>
+                </div>
+
+            </div>
+            
+
+        </div>
+        <div class="right-sidebar">
+            <div class="sidebar-news">
+                <img src="info.png" class="info_icon">
+                <h1>Trending News</h1>
+                <a href="#">High demand for skilled manpower</a>
+                <span>1d ago &middot; 3,453 readers</span>
+
+                <a href="#">High demand for skilled manpower</a>
+                <span>1d ago &middot; 3,453 readers</span>
+
+                <a href="#">High demand for skilled manpower</a>
+                <span>1d ago &middot; 3,453 readers</span>
+
+                <a href="#">High demand for skilled manpower</a>
+                <span>1d ago &middot; 3,453 readers</span>
+
+                <a href="#" class="sidebar-news">Read more</a>
+            </div>
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot;</small>
+                <p>Master 12 rules of coding</p>
+                <div>
+                    <img src="user-profile.jpg">
+                    <img src="dameer.png">
+                </div>
+                <b>brand and demand in xiamond</b>
+                <a href="#" class="ad-link"> learng more</a>
+            </div>
+            <div class="sidebar-usefull-links">
+                <a href="#">About</a>
+                <a href="#">Accsesibilityt</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy policy</a>
+                <a href="#">Advertising</a>
+                <a href="#">Get the app</a>
+                <a href="#">More</a>
+
+                <div class="copyright-msg">
+                    <img src="fav.jpg">
+                    <p>Linkedin &copy; 2025 all right reserved.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
